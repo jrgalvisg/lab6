@@ -1,0 +1,5 @@
+sa/filters/AccessControlResponseFilter.class
+sa/user/resource/UserResource.class
+sa/user/service/UserService.class
+sa/user/JAXRSConfiguration.class
+sa/user/model/User.class

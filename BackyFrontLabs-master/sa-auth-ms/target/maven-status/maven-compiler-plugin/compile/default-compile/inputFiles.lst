@@ -1,0 +1,5 @@
+/home/fernando/Documentos/BackyFrontLabs/sa-auth-ms/sa-auth-ms/src/main/java/sa/user/model/User.java
+/home/fernando/Documentos/BackyFrontLabs/sa-auth-ms/sa-auth-ms/src/main/java/sa/filters/AccessControlResponseFilter.java
+/home/fernando/Documentos/BackyFrontLabs/sa-auth-ms/sa-auth-ms/src/main/java/sa/user/resource/UserResource.java
+/home/fernando/Documentos/BackyFrontLabs/sa-auth-ms/sa-auth-ms/src/main/java/sa/user/service/UserService.java
+/home/fernando/Documentos/BackyFrontLabs/sa-auth-ms/sa-auth-ms/src/main/java/sa/user/JAXRSConfiguration.java

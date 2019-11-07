@@ -1,0 +1,27 @@
+version: "2.1"
+services:
+  sa-auth-ms:
+    build: .
+    ports:
+      - "4000:4000"
+    depends_on:
+      sa-auth-db:
+        condition: service_healthy
+    healthcheck:
+      test: "curl -I sa-auth-ms:4000/sa-auth-ms/resources/users/ --fail"
+      interval: 20s
+      retries: 10
+  sa-auth-db:
+    image: mysql:5.7
+    healthcheck:
+      test: "mysqlcheck -u$$MYSQL_USER -p$$MYSQL_PASSWORD $$MYSQL_DATABASE"
+      interval: 20s
+      timeout: 5s
+      retries: 15
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: auth
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: 2019ii
+    ports:
+      - "3306:3306"
